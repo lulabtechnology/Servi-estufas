@@ -2,360 +2,552 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <title>Servi-Estufa | Servicio Técnico Especializado</title>
+    <title>Servi-Estufa | Servicio técnico especializado</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
     <meta
       name="description"
-      content="SERVI-ESTUFA - Servicio técnico especializado en reparación, mantenimiento e instalación de equipos de cocina industriales, comerciales y domésticos en Panamá."
+      content="Servicio técnico especializado en reparación, mantenimiento e instalación de equipos de cocina a gas y eléctricos para hogares, comercios y cocinas industriales en Panamá."
     />
-    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="icon" type="image/png" href="images/logo-serviestufa.png" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="/styles.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/images/logo-serviestufa.png" />
   </head>
   <body>
-    <!-- NAVBAR -->
+    <!-- =========================
+         HEADER / NAVBAR
+         ========================= -->
     <header class="se-header">
-      <div class="se-container se-header-inner">
-        <a href="#hero" class="se-brand">
+      <div class="se-header-inner se-container">
+        <a href="#inicio" class="se-brand">
           <img
-            src="images/logo-serviestufa.png"
+            src="/images/logo-serviestufa.png"
             alt="Logo Servi-Estufa"
             class="se-logo"
           />
           <div class="se-brand-text">
             <span class="se-brand-name">SERVI-ESTUFA</span>
-            <span class="se-brand-sub">Servicio Técnico Especializado</span>
+            <span class="se-brand-sub">SERVICIO TÉCNICO ESPECIALIZADO</span>
           </div>
         </a>
 
-        <nav class="se-nav">
+        <nav class="se-nav" id="seNav">
           <a href="#servicios">Servicios</a>
-          <a href="#especializados">Especialización</a>
-          <a href="#galeria">Galería</a>
+          <a href="#especializados">Marcas</a>
+          <a href="#galeria">Trabajos</a>
           <a href="#contacto">Contacto</a>
         </nav>
 
         <a
-          href="https://wa.me/50765824409?text=Hola%20Servi-Estufa,%20quiero%20información%20sobre%20sus%20servicios."
+          href="https://wa.me/50765824409?text=Hola,%20necesito%20servicio%20t%C3%A9cnico%20para%20mi%20equipo%20de%20cocina."
           class="se-btn se-btn-primary se-header-cta"
           target="_blank"
-          rel="noopener"
+          rel="noopener noreferrer"
         >
-          WhatsApp 6582-4409
+          WhatsApp
         </a>
 
-        <button class="se-nav-toggle" id="navToggle" aria-label="Menú">
-          <span></span><span></span><span></span>
+        <button
+          class="se-nav-toggle"
+          id="seNavToggle"
+          aria-label="Abrir o cerrar menú"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </header>
 
-    <!-- HERO -->
-    <section id="hero" class="se-hero">
-      <div class="se-hero-overlay"></div>
-      <div class="se-container se-hero-grid">
-        <div class="se-hero-text">
-          <div class="se-pill">Taller móvil a domicilio • David, Chiriquí</div>
-          <h1>
-            Servicio técnico
-            <span class="se-gradient-text">especializado</span><br />
-            en equipos de cocina a gas y eléctricos
-          </h1>
-          <p class="se-hero-sub">
-            Reparación, mantenimiento e instalación de
-            <strong>estufas, hornos, grills, freidoras, secadoras a gas y
-              eléctricas, calentadores de agua</strong> y más. Atención a
-            hogares, comercios y cocinas industriales.
-          </p>
+    <main>
+      <!-- =========================
+           HERO
+           ========================= -->
+      <section class="se-hero" id="inicio">
+        <div class="se-hero-overlay"></div>
 
-          <div class="se-hero-actions">
-            <a
-              href="https://wa.me/50765824409?text=Hola%20Servi-Estufa,%20necesito%20una%20reparación%20o%20mantenimiento."
-              class="se-btn se-btn-primary se-btn-lg"
-              target="_blank"
-              rel="noopener"
-            >
-              Agendar visita por WhatsApp
-            </a>
-            <a href="#servicios" class="se-btn se-btn-outline se-btn-lg">
-              Ver servicios
-            </a>
-          </div>
+        <div class="se-container se-hero-grid">
+          <div class="se-hero-text">
+            <div class="se-pill">
+              🔧 Taller móvil a domicilio • David, Chiriquí
+            </div>
 
-          <div class="se-hero-badges">
-            <div class="se-badge">
-              <span class="se-badge-title">1 año de garantía</span>
-              <span class="se-badge-sub">en repuestos y mano de obra</span>
-            </div>
-            <div class="se-badge">
-              <span class="se-badge-title">Técnicos idóneos</span>
-              <span class="se-badge-sub">servicio especializado</span>
-            </div>
-            <div class="se-badge">
-              <span class="se-badge-title">Facturamos fiscal</span>
-              <span class="se-badge-sub">para empresas y comercios</span>
-            </div>
-          </div>
-        </div>
+            <h1>
+              Servicio técnico
+              <span class="se-gradient-text">especializado</span><br />
+              en equipos de cocina a gas y eléctricos
+            </h1>
 
-        <div class="se-hero-media">
-          <div class="se-hero-card">
-            <img
-              src="images/hero-tecnico-serviestufa.jpg"
-              alt="Técnico de Servi-Estufa reparando equipo de cocina"
-              class="se-hero-img"
-            />
-            <div class="se-hero-card-tag">
-              Taller móvil • Equipo profesional
-            </div>
-          </div>
-          <div class="se-hero-floating">
-            <img
-              src="images/van-serviestufa.jpg"
-              alt="Taller móvil a domicilio Servi-Estufa"
-              class="se-hero-floating-img"
-            />
-            <div class="se-hero-floating-text">
-              Llegamos hasta tu cocina<br />
-              <span>Hogar • Comercios • Cocinas industriales</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- SERVICIOS PRINCIPALES -->
-    <section id="servicios" class="se-section">
-      <div class="se-container">
-        <div class="se-section-header">
-          <h2>Servicios principales</h2>
-          <p>
-            Técnicos idóneos en servicio especializado de
-            <strong>reparación, mantenimiento e instalación</strong> de equipos
-            de cocina industrial, comercial y doméstico.
-          </p>
-        </div>
-
-        <div class="se-grid-3">
-          <article class="se-card">
-            <h3>Reparación y diagnóstico</h3>
-            <p>
-              Localizamos y reparamos fallas en estufas, hornos, grills,
-              freidoras, secadoras a gas y eléctricas y calentadores de agua.
+            <p class="se-hero-sub">
+              Reparación, mantenimiento e instalación de estufas, hornos,
+              grills, freidoras, secadoras a gas y calentadores de agua para
+              hogares, comercios y cocinas industriales.
             </p>
-            <ul class="se-list">
-              <li>Diagnóstico profesional en sitio</li>
-              <li>Reemplazo de piezas defectuosas</li>
-              <li>Ajustes de seguridad en gas y electricidad</li>
-            </ul>
-          </article>
 
-          <article class="se-card">
-            <h3>Mantenimiento preventivo</h3>
-            <p>
-              Alarga la vida útil de tus equipos y evita paradas inesperadas en
-              tu cocina.
-            </p>
-            <ul class="se-list">
-              <li>Limpieza profunda de quemadores y conductos</li>
-              <li>Calibraciones y pruebas de funcionamiento</li>
-              <li>Planes para hogares y cocinas profesionales</li>
-            </ul>
-          </article>
-
-          <article class="se-card">
-            <h3>Instalación y reconversión</h3>
-            <p>
-              Instalación segura y certificada de nuevos equipos y conversión de
-              gas según tus necesidades.
-            </p>
-            <ul class="se-list">
-              <li>Instalación de equipos nuevos</li>
-              <li>Reconversión de gas (GLP / GN)</li>
-              <li>Revisión de fugas y pruebas de seguridad</li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="se-highlight">
-          <div>
-            <h3>Reconstrucción de válvulas y fabricación de quemadores</h3>
-            <p>
-              Diseñamos y reconstruimos válvulas y quemadores a medida para
-              equipos especiales o fuera de catálogo. Ideal para cocinas
-              industriales, panaderías, restaurantes y hoteles.
-            </p>
-          </div>
-          <div class="se-highlight-tag">
-            Taller especializado • Repuestos y soluciones a medida
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ESPECIALIZADOS EN TODAS LAS MARCAS -->
-    <section id="especializados" class="se-section se-section-dark">
-  <div class="se-container se-especial-grid">
-    <div>
-      <h2>ESPECIALIZADOS EN TODAS LAS MARCAS DEL MERCADO</h2>
-      <p>Trabajamos con las principales marcas de equipos de cocina industriales,
-        comerciales y domésticos. Si tu equipo usa gas o electricidad, nosotros lo atendemos.
-      </p>
-
-      <div class="se-tags">
-        <span>Estufas</span>
-        <span>Hornos</span>
-        <span>Grills</span>
-        <span>Freidoras</span>
-        <span>Secadoras a gas y eléctricas</span>
-        <span>Calentadores de agua</span>
-      </div>
-
-      <div class="se-payments">
-        <h3>FORMAS DE PAGO</h3>
-        <p>Aceptamos tarjetas de crédito Visa y MasterCard, débito Clave, Yappy y ACH.
-          Emitimos factura fiscal.
-        </p>
-      </div>
-
-      <div class="se-garantia">
-        <h3>GARANTÍA</h3>
-        <p>🧾 1 año de garantía en repuestos y mano de obra.</p>
-      </div>
-    </div>
-
-    <div class="se-especial-media">
-      <figure class="se-especial-card">
-        <img
-          src="/images/especial-calentador-industrial.jpg"
-          alt="Calentador de agua industrial con herramientas de Servi-Estufa"
-        />
-        <figcaption class="se-especial-caption">
-          Reparación, Mantenimiento y repuestos de Calentadores industriales y domésticos
-        </figcaption>
-      </figure>
-
-      <figure class="se-especial-card small">
-        <img
-          src="/images/especial-tecnico-panel-gas.jpg"
-          alt="Técnico de Servi-Estufa trabajando en panel de cocina industrial"
-        />
-      </figure>
-    </div>
-  </div>
-</section>
-
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="se-section se-section-dark">
-      <div class="se-container se-contact-grid">
-        <div>
-          <h2>Contacto y cobertura</h2>
-          <p>
-            Atendemos <strong>toda la Provincia de Chiriquí, Provincias
-            Centrales y la Ciudad Capital</strong> con taller móvil a domicilio
-            para hogares, negocios y cocinas industriales.
-          </p>
-
-          <div class="se-contact-items">
-            <div class="se-contact-item">
-              <span class="se-contact-label">WhatsApp / Teléfono</span>
-              <a href="tel:+50765824409" class="se-contact-value">
-                +507 6582-4409
-              </a>
-            </div>
-
-            <div class="se-contact-item">
-              <span class="se-contact-label">Correo</span>
+            <div class="se-hero-actions">
               <a
-                href="mailto:info@serviestufa.com"
-                class="se-contact-value"
+                href="https://wa.me/50765824409?text=Hola,%20necesito%20servicio%20t%C3%A9cnico%20para%20mi%20equipo%20de%20cocina."
+                class="se-btn se-btn-primary se-btn-lg"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                info@serviestufa.com
+                Escribir por WhatsApp
               </a>
-              <span class="se-contact-note"
-                >(puedes cambiar este correo cuando esté creado)</span
-              >
+              <a href="tel:+50765824409" class="se-btn se-btn-outline se-btn-lg">
+                Llamar ahora
+              </a>
             </div>
 
-            <div class="se-contact-item">
-              <span class="se-contact-label">Ubicación</span>
-              <span class="se-contact-value">David, Chiriquí · Panamá</span>
-            </div>
-
-            <div class="se-contact-item">
-              <span class="se-contact-label">Redes sociales</span>
-              <div class="se-socials">
-                <a href="https://instagram.com/serviestufa" target="_blank"
-                  >Instagram</a
+            <div class="se-hero-badges">
+              <div class="se-badge">
+                <span class="se-badge-title">1 año de garantía</span>
+                <span class="se-badge-sub"
+                  >En repuestos y mano de obra en cada servicio.</span
                 >
-                <a
-                  href="https://www.facebook.com/share/1GXyQCtRaT/"
-                  target="_blank"
-                  >Facebook</a
+              </div>
+              <div class="se-badge">
+                <span class="se-badge-title">Taller móvil</span>
+                <span class="se-badge-sub"
+                  >David, Chiriquí • Provincias Centrales • Ciudad de
+                  Panamá.</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="se-hero-media">
+            <div class="se-hero-card">
+              <img
+                src="/images/hero-cocina-industrial.jpg"
+                alt="Línea de cocinas industriales en acero inoxidable"
+                class="se-hero-img"
+              />
+              <div class="se-hero-card-tag">
+                Hogar • Comercios • Cocinas industriales
+              </div>
+            </div>
+
+            <div class="se-hero-floating">
+              <img
+                src="/images/hero-van-serviestufa.jpg"
+                alt="Taller móvil de Servi-Estufa en vehículo rotulado"
+                class="se-hero-floating-img"
+              />
+              <div class="se-hero-floating-text">
+                Llegamos hasta tu cocina
+                <span
+                  >Servicio técnico a domicilio en equipos de cocina a gas y
+                  eléctricos.</span
                 >
               </div>
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="se-contact-card">
-          <h3>Envíanos un mensaje rápido</h3>
-          <p>
-            Este botón abre directamente WhatsApp con un mensaje prellenado.
-          </p>
-          <a
-            href="https://wa.me/50765824409?text=Hola%20Servi-Estufa,%20necesito%20ayuda%20con%20un%20equipo%20de%20cocina."
-            class="se-btn se-btn-primary se-btn-full"
-            target="_blank"
-            rel="noopener"
-          >
-            Abrir WhatsApp
-          </a>
-          <p class="se-contact-small">
-            Horario de atención sujeto a agenda. Para emergencias en cocinas
-            industriales, indica tu urgencia en el mensaje.
-          </p>
+      <!-- =========================
+           SERVICIOS
+           ========================= -->
+      <section id="servicios" class="se-section">
+        <div class="se-container">
+          <div class="se-section-header">
+            <h2>Servicios de Servi-Estufa</h2>
+            <p>
+              Servicio técnico especializado en reparación, mantenimiento e
+              instalación de todo tipo de equipos de cocina industriales,
+              comerciales y domésticos.
+            </p>
+          </div>
+
+          <div class="se-grid-3">
+            <article class="se-card">
+              <h3>Taller móvil a domicilio</h3>
+              <p>
+                Llegamos hasta tu hogar, negocio o cocina industrial con nuestro
+                taller móvil totalmente equipado para diagnosticar y dejar tus
+                equipos funcionando con seguridad.
+              </p>
+              <ul class="se-list">
+                <li>Atención en David, Chiriquí y alrededores.</li>
+                <li>Soporte para hogares, negocios y restaurantes.</li>
+                <li>Respuesta rápida y puntual.</li>
+              </ul>
+            </article>
+
+            <article class="se-card">
+              <h3>Equipos de cocina a gas y eléctricos</h3>
+              <p>
+                Técnicos idóneos en servicio especializado para equipos de
+                cocina a gas y eléctricos de todas las marcas del mercado.
+              </p>
+              <ul class="se-list">
+                <li>Estufas y hornos (industriales y domésticos).</li>
+                <li>Grills y freidoras industriales.</li>
+                <li>Campanas extractoras y hornos empotrables.</li>
+              </ul>
+            </article>
+
+            <article class="se-card">
+              <h3>Secadoras y calentadores de agua</h3>
+              <p>
+                Mantenimiento profundo, reparación y repuestos en equipos de
+                secado y agua caliente.
+              </p>
+              <ul class="se-list">
+                <li>Secadoras a gas y eléctricas.</li>
+                <li>Calentadores de agua industriales y domésticos.</li>
+                <li>Reconstrucción de válvulas y fabricación de quemadores.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="se-highlight">
+            <div>
+              <h3>Repuestos y garantías reales</h3>
+              <p>
+                Trabajamos con repuestos de calidad y ofrecemos
+                <strong>1 año de garantía</strong> en repuestos y mano de obra.
+                Emitimos factura fiscal en cada servicio.
+              </p>
+            </div>
+            <div class="se-highlight-tag">
+              💳 Aceptamos Visa, MasterCard, Clave, Yappy y ACH
+            </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- FOOTER -->
+      <!-- =========================
+           ESPECIALIZADOS / MARCAS
+           ========================= -->
+      <section id="especializados" class="se-section se-section-dark">
+        <div class="se-container se-especial-grid">
+          <div>
+            <h2>Especializados en todas las marcas del mercado</h2>
+            <p>
+              Trabajamos con las principales marcas de equipos de cocina
+              industriales, comerciales y domésticos. Si tu equipo usa gas o
+              electricidad, nosotros lo atendemos.
+            </p>
+
+            <div class="se-tags">
+              <span>Estufas</span>
+              <span>Hornos</span>
+              <span>Grills</span>
+              <span>Freidoras</span>
+              <span>Secadoras a gas y eléctricas</span>
+              <span>Calentadores de agua</span>
+            </div>
+
+            <p>
+              SOMOS SERVICIO TÉCNICO ESPECIALIZADO EN LAS MARCAS ITALIANAS
+              <strong>Ariston, Bompani, La Germania, Teka</strong>, entre otras.
+            </p>
+
+            <div class="se-payments">
+              <h3>Formas de pago</h3>
+              <p>
+                Aceptamos <strong>tarjetas de crédito Visa y MasterCard</strong
+                >, débito Clave, Yappy y ACH. Emitimos factura fiscal.
+              </p>
+            </div>
+
+            <div class="se-garantia" style="margin-top: 1.1rem;">
+              <h3>Garantía</h3>
+              <p>🧾 <strong>1 año de garantía</strong> en repuestos y mano de obra.</p>
+            </div>
+          </div>
+
+          <div class="se-especial-media">
+            <figure class="se-especial-card">
+              <img
+                src="/images/especial-calentador-industrial.jpg"
+                alt="Calentador de agua industrial con herramientas de Servi-Estufa"
+              />
+              <figcaption class="se-especial-caption">
+                Reparación, Mantenimiento y repuestos de Calentadores
+                industriales y domésticos
+              </figcaption>
+            </figure>
+
+            <figure class="se-especial-card small">
+              <img
+                src="/images/especial-tecnico-panel-gas.jpg"
+                alt="Técnico de Servi-Estufa trabajando en panel de cocina industrial"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           GALERÍA / TRABAJOS
+           ========================= -->
+      <section id="galeria" class="se-section">
+        <div class="se-container">
+          <div class="se-section-header">
+            <h2>Trabajos recientes</h2>
+            <p>
+              Una muestra de intervenciones reales de nuestro taller móvil en
+              hogares, comercios y cocinas industriales.
+            </p>
+          </div>
+
+          <div class="se-gallery">
+            <!-- 1: Cocina / restaurante (grande) -->
+            <figure class="se-gallery-item se-gallery-item-large">
+              <img
+                src="/images/galeria-cocina-industrial-general.jpg"
+                alt="Cocina industrial en acero inoxidable atendida por Servi-Estufa"
+              />
+              <figcaption>
+                Taller móvil a domicilio • Cocinas industriales y restaurantes
+              </figcaption>
+            </figure>
+
+            <!-- 2: Freidoras industriales -->
+            <figure class="se-gallery-item">
+              <img
+                src="/images/galeria-freidora-industrial.jpg"
+                alt="Freidora industrial con repuestos y termostatos"
+              />
+              <figcaption>
+                Reparación, Mantenimiento y todo tipo de repuestos para Freidoras industriales
+              </figcaption>
+            </figure>
+
+            <!-- 3: Calentadores -->
+            <figure class="se-gallery-item">
+              <img
+                src="/images/galeria-calentador-industrial.jpg"
+                alt="Calentador de agua a gas con herramientas de trabajo"
+              />
+              <figcaption>
+                Reparación, Mantenimiento y repuestos de Calentadores industriales y domésticos
+              </figcaption>
+            </figure>
+
+            <!-- 4: Hornos industriales -->
+            <figure class="se-gallery-item">
+              <img
+                src="/images/galeria-horno-industrial.jpg"
+                alt="Horno y estufa industrial tipo restaurante en mantenimiento"
+              />
+              <figcaption>
+                REPARACIÓN Y MANTENIMIENTO DE HORNOS INDUSTRIALES
+              </figcaption>
+            </figure>
+
+            <!-- 5: Estufas, hornos empotrables y campanas -->
+            <figure class="se-gallery-item">
+              <img
+                src="/images/galeria-estufas-hornos-campanas.jpg"
+                alt="Técnico instalando horno empotrable y campana extractora"
+              />
+              <figcaption>
+                Reparación, Mantenimiento e instalación de Estufas, Hornos empotrables y campanas extractora de grasa
+              </figcaption>
+            </figure>
+
+            <!-- 6: Secadoras -->
+            <figure class="se-gallery-item">
+              <img
+                src="/images/galeria-secadora-gas.jpg"
+                alt="Secadora a gas desarmada en proceso de mantenimiento"
+              />
+              <figcaption>
+                REPARACIÓN Y MANTENIMIENTO DE SECADORAS A GAS Y ELÉCTRICAS
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           CONTACTO
+           ========================= -->
+      <section id="contacto" class="se-section se-section-dark">
+        <div class="se-container se-contact-grid">
+          <div>
+            <h2>Contacto y cobertura</h2>
+            <p>
+              Atendemos toda la Provincia de Chiriquí, Provincias Centrales y la
+              Ciudad Capital con taller móvil a domicilio para hogares, negocios
+              y cocinas industriales.
+            </p>
+
+            <div class="se-contact-items">
+              <div class="se-contact-item">
+                <span class="se-contact-label">WhatsApp / Teléfono</span>
+                <a
+                  href="https://wa.me/50765824409"
+                  class="se-contact-value"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  +507 6582-4409
+                </a>
+              </div>
+
+              <div class="se-contact-item">
+                <span class="se-contact-label">Correo</span>
+                <a
+                  href="mailto:info@serviestufa.com"
+                  class="se-contact-value"
+                >
+                  info@serviestufa.com
+                </a>
+                <span class="se-contact-note">
+                  (puedes cambiar este correo cuando esté creado)
+                </span>
+              </div>
+
+              <div class="se-contact-item">
+                <span class="se-contact-label">Ubicación</span>
+                <span class="se-contact-value">David, Chiriquí · Panamá</span>
+              </div>
+
+              <div class="se-contact-item">
+                <span class="se-contact-label">Redes sociales</span>
+                <div class="se-socials">
+                  <a
+                    href="https://www.instagram.com/serviestufa"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href="https://www.facebook.com/share/1GXyQCtRaT/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Facebook
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <aside class="se-contact-card">
+            <h3>Envíanos un mensaje</h3>
+            <p>
+              Cuéntanos qué equipo de cocina tienes, qué falla presenta y dónde
+              te encuentras. Te responderemos con la mejor opción de visita y
+              horario disponible.
+            </p>
+            <a
+              href="https://wa.me/50765824409?text=Hola,%20necesito%20servicio%20t%C3%A9cnico%20para%20mi%20equipo%20de%20cocina."
+              class="se-btn se-btn-primary se-btn-full"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Escribir por WhatsApp
+            </a>
+            <p class="se-contact-small">
+              También puedes llamar directamente al
+              <strong>+507 6582-4409</strong> para coordinar tu servicio.
+            </p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- =========================
+           CTA FINAL
+           ========================= -->
+      <section class="se-cta-strip">
+        <div class="se-container se-cta-inner">
+          <div>
+            <h2>¿Tu cocina se detuvo? Nosotros la encendemos de nuevo 🔥</h2>
+            <p>
+              Agenda tu visita de diagnóstico con nuestro taller móvil y deja
+              tus equipos en manos de técnicos idóneos.
+            </p>
+          </div>
+          <a
+            href="https://wa.me/50765824409?text=Hola,%20quiero%20agendar%20una%20visita%20t%C3%A9cnica%20para%20mi%20equipo%20de%20cocina."
+            class="se-btn se-btn-primary se-btn-lg"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Agendar por WhatsApp
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =========================
+         FOOTER
+         ========================= -->
     <footer class="se-footer">
       <div class="se-container se-footer-inner">
         <div class="se-footer-left">
           <img
-            src="images/logo-serviestufa.png"
+            src="/images/logo-serviestufa.png"
             alt="Logo Servi-Estufa"
             class="se-footer-logo"
           />
           <span
-            >© <span id="year"></span> Servi-Estufa. Todos los derechos
-            reservados.</span
+            >© <span id="seYear"></span> Servi-Estufa. Servicio técnico
+            especializado en equipos de cocina.</span
           >
         </div>
-        <div class="se-footer-right">
-          <span>Servicio técnico especializado en equipos de cocina.</span>
+        <div>
+          Sitio web desarrollado por LulabTech.
         </div>
       </div>
     </footer>
 
-    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <!-- =========================
+         BOTÓN WHATSAPP FLOTANTE
+         ========================= -->
     <a
-      href="https://wa.me/50765824409?text=Hola%20Servi-Estufa,%20quisiera%20una%20cotización."
+      href="https://wa.me/50765824409?text=Hola,%20necesito%20servicio%20t%C3%A9cnico%20para%20mi%20equipo%20de%20cocina."
       class="se-whatsapp-floating"
       target="_blank"
-      rel="noopener"
+      rel="noopener noreferrer"
     >
       <span>WhatsApp</span>
     </a>
 
-    <script src="script.js"></script>
+    <!-- =========================
+         SCRIPTS
+         ========================= -->
+    <script>
+      // Toggle del menú en móvil
+      const nav = document.getElementById("seNav");
+      const navToggle = document.getElementById("seNavToggle");
+
+      if (nav && navToggle) {
+        navToggle.addEventListener("click", () => {
+          nav.classList.toggle("open");
+          navToggle.classList.toggle("open");
+        });
+
+        nav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            nav.classList.remove("open");
+            navToggle.classList.remove("open");
+          });
+        });
+      }
+
+      // Año en el footer
+      const yearSpan = document.getElementById("seYear");
+      if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
+      }
+    </script>
   </body>
 </html>
