@@ -972,6 +972,28 @@ body {
     font-size: 2.2rem;
   }
 
+  /* --- Ajuste hero para que no se vea apiñado en CELULAR --- */
+  .se-hero-media {
+    max-width: 360px;
+    margin: 0 auto 2.4rem;
+  }
+
+  .se-hero-card {
+    border-radius: 20px;
+  }
+
+  /* En phones pequeños las dos tarjetas se apilan, no se montan */
+  .se-hero-floating {
+    position: relative;
+    width: 88%;
+    margin: 0.9rem auto 0;
+    right: auto;
+    top: auto;
+    bottom: auto;
+    transform: none;
+  }
+  /* --------------------------------------------------------- */
+
   .se-gallery {
     grid-template-columns: minmax(0, 1fr);
     grid-auto-rows: 210px;
