@@ -538,8 +538,10 @@ body {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
   gap: 2.5rem;
-  align-items: center;
+  /* para que el texto se alinee arriba y no quede tan abajo */
+  align-items: start;
 }
+
 
 .se-especial-grid h2 {
   font-family: "Rajdhani", sans-serif;
